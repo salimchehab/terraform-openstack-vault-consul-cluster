@@ -1,0 +1,11 @@
+---
+- hosts: consul_instances
+  become: no
+  tasks:
+    - name: Check OS version
+      command: cat /etc/os-release
+      register: os_release
+
+    - name: Print version
+      debug:
+        msg: "os-release: {{ os_release.stdout }}"

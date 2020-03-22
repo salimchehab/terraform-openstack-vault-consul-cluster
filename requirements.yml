@@ -1,0 +1,16 @@
+---
+
+- src: https://github.com/dockpack/ansible-vault.git
+  # Supports Vault v1.3.2
+  version: v2.5.2
+  name: ansible-vault
+
+- src: https://github.com/dockpack/ansible-consul.git
+  # Supports Consul v1.6.3
+  version: v2.5.4
+  name: ansible-consul
+
+- src: https://github.com/TerryHowe/ansible-modules-hashivault.git
+  # Alternatively: pip install ansible-modules-hashivault (requires hvac>=0.7.0): pip3 install hvac
+  version: 4.2.3
+  name: ansible-modules-hashivault
