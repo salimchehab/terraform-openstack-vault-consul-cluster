@@ -84,7 +84,7 @@ variable "consul_cluster_size" {
 variable "vault_instance_flavor" {
   description = "The flavor of compute instance to run in the Vault cluster."
   type        = string
-  default     = " 2.04.default"
+  default     = "2.04.default"
 }
 
 variable "consul_instance_flavor" {
