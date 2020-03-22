@@ -6,7 +6,7 @@ The default value for the number of servers is 3. The module assigns floating IP
 
 There are local and remote exec in the [provisioners](./provisioners.tf) file. They can be used to execute initial bootstrap-relevant commands when provisioning the infrastructure.
 
-The following environment variables are picked up by OpenStack for provisioning and should be set:
+The following environment variables are picked up by OpenStack for provisioning and should be set if a `clouds.yaml` file is not available:
 
     - OS_AUTH_URL
     - OS_CACERT
